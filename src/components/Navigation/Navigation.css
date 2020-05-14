@@ -1,0 +1,50 @@
+#navigation {
+    position: fixed;
+}
+
+
+/* ========================================== */
+/* #Navigation Bar Burger Button */
+/* ========================================== */
+#navigation .nav-bar-toggler {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #4FBA6F;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#navigation .nav-bar-toggler:focus {
+    outline: none;
+}
+
+#navigation #burger-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#navigation #burger-icon .bar {
+    width: 35px;
+    height: 4px;
+    background-color: #4FBA6F;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#navigation.active #burger-icon {
+    padding-left: 4px;
+}
+
+/* Rotate first bar */
+#navigation.active #burger-icon .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+/* Fade out the second bar */
+#navigation.active #burger-icon .bar2 {
+    opacity: 0;
+}
+/* Rotate last bar */
+#navigation.active #burger-icon .bar3 {
+    transform: rotate(45deg) translate(-8px, -6px) ;
+}
