@@ -1,8 +1,5 @@
 import React from 'react';
-import './Navigation.css';
-
 import NavigationLinks from './NavigationLinks';
-
 import logo from '../../assets/images/logo.svg';
 
 
