@@ -1,0 +1,21 @@
+{
+    "navigation": {
+        "home": "Início",
+
+        "langSelection": {
+            "active": {
+                "flag": "flag-icon flag-icon-br",
+                "text": "Português"
+            },
+            "hidden": [
+                {"flag": "flag-icon flag-icon-us", "href": "#en", "text": "English"},
+                {"flag": "flag-icon flag-icon-es", "href": "#es", "text": "Español"},
+                {"flag": "flag-icon flag-icon-fr", "href": "#fr", "text": "Français"},
+                {"flag": "flag-icon flag-icon-it", "href": "#it", "text": "Italiano"}
+            ]
+        }
+    },
+    "header": {
+        "title": "test"
+    }
+}
