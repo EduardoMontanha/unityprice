@@ -1,6 +1,7 @@
 import React from 'react';
 import { LanguageContext } from '../../context/LanguageContext';
 import Cookie from '../common/Cookie';
+import Modal from '../common/Modal';
 
 
 /**
@@ -47,10 +48,6 @@ function changeLanguage(e) {
     window.location.reload(true);
 }
 
-function closeModal () {
-    
-}
-
 
 /**
  * Components
@@ -64,12 +61,8 @@ const OtherLanguages = (props) => {
     );
 
     return(
-        <div className="modal hide">
-            <div className="close-modal" onClick={closeModal}>&#215;</div>
-
-            <div className="language-selection-box">
-                {othersLang}
-            </div>
+        <div className="language-selection-box">
+            {othersLang}
         </div>
     );
 }
@@ -115,7 +108,9 @@ class NavigationLinks extends React.Component {
                             <span>{langSelection.active.text}</span>&#8744;
                         </a>
 
-                        <OtherLanguages langs={langSelection.hidden} />
+                        <Modal>
+                            <OtherLanguages langs={langSelection.hidden} />
+                        </Modal>
                     </li>
                 </ul>
             </div>
