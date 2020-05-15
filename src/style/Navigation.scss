@@ -1,0 +1,88 @@
+#navigation {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+}
+
+#navigation .container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ========================================== */
+/* Logo */
+/* ========================================== */
+#logo {
+    color: $c2;
+    text-decoration: none;
+    @include font1;
+}
+
+#logo img,
+#logo span {
+    vertical-align: middle;
+}
+
+#logo img {
+    max-height: 45px;
+    margin-right: 0.5rem;
+}
+
+#logo span {
+    font-size: 2rem;
+}
+
+
+/* ========================================== */
+/* Burger Button */
+/* ========================================== */
+#navigation .nav-bar-toggler {
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#navigation .nav-bar-toggler:focus {
+    outline: none;
+}
+
+#navigation #burger-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#navigation #burger-icon .bar {
+    width: 35px;
+    height: 4px;
+    background-color: $c2;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#navigation.active #burger-icon {
+    padding-left: 4px;
+}
+
+/* Rotate first bar */
+#navigation.active #burger-icon .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+/* Fade out the second bar */
+#navigation.active #burger-icon .bar2 {
+    opacity: 0;
+}
+/* Rotate last bar */
+#navigation.active #burger-icon .bar3 {
+    transform: rotate(45deg) translate(-8px, -6px) ;
+}
+
+
+/* ========================================== */
+/* Navigation Links */
+/* ========================================== */
+#navigation .nav-links {
+    display: none;
+}
