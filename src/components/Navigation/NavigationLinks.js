@@ -105,7 +105,7 @@ class NavigationLinks extends React.Component {
                     <li className="nav-item">
                         <a href="#!" className="current-lang" onClick={toggleLanguageSelectionMenu}>
                             <i className={langSelection.active.flag}></i>
-                            <span>{langSelection.active.text}</span>&#8744;
+                            <span>{langSelection.active.text}</span>
                         </a>
 
                         <Modal>
