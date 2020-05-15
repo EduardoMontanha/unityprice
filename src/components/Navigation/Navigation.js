@@ -7,7 +7,10 @@ import logo from '../../assets/images/logo.svg';
  * Behaviors
  */
 function openMenu() {
+    //Change nav style
     document.getElementById("navigation").classList.toggle("active");
+    //Show/hide menu
+    document.querySelector(".nav-links").classList.toggle("show");
 }
 
 
