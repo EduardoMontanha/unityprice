@@ -1,4 +1,69 @@
 #home {
-    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
+    padding: 4rem 0;
     background-color: $c4;
+    display: flex;
+    color: $c5;
+}
+
+#home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#home h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#home h1 span {
+    display: block;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: $c2;
+}
+
+#home p {
+    margin-bottom: 3rem;
+    font-family: $font2;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#home button {
+    border: none;
+    border-radius: 5px;
+    display: block;
+    font-family: $font2Bold;
+    color: $c5;
+    text-transform: uppercase;
+}
+
+#home #start-btn {
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    background-color: $c1;
+    font-size: 1.5rem;
+}
+
+#home #share-btn {
+    width: 70%;
+    padding: 0.6rem 0;
+    margin: 0 auto;
+    border: 2px solid $c5;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+#home #share-btn span,
+#home #share-btn img {
+    vertical-align: middle;
+}
+
+#home #share-btn img {
+    height: 1.2rem;
+    margin-left: 1rem;
 }
