@@ -20,9 +20,9 @@ class Navigation extends React.Component {
         return(
             <nav id="navigation">
                 <div className="container">
-                    <a href="">
+                    <a href="index.html" id="logo">
                         <img src={logo} alt="Logo"/>
-                        Unity Cost
+                        <span>Unity Price</span>
                     </a>
 
                     <button className="nav-bar-toggler" onClick={openMenu}>
