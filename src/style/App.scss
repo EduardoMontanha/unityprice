@@ -8,17 +8,9 @@ $c4: #50514F;
 $c5: #F1F2EB;
 
 /* Fonts */
-@mixin font1 {
-    font-family: Pacifico, cursive;
-}
-
-@mixin font2 {
-    font-family: Oswald, sans-serif;
-}
-
-@mixin  font22 {
-    font-family: OswaldBold, sans-serif;
-}
+$font1: Pacifico, cursive;
+$font2: Oswald, sans-serif;
+$font2Bold: OswaldBold, sans-serif;
 
 
 /* =============================================== */
