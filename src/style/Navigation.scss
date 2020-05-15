@@ -1,5 +1,8 @@
 #navigation {
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+    position: fixed;
+    width: 100%;
+    background-color: $c4;
 }
 
 #navigation .container {
@@ -25,12 +28,12 @@
 }
 
 #logo img {
-    max-height: 50px;
+    max-height: 45px;
     margin-right: 0.5rem;
 }
 
 #logo span {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -57,7 +60,7 @@
 #navigation #burger-icon .bar {
     width: 35px;
     height: 4px;
-    background-color: $c2;
+    background-color: $c5;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -85,4 +88,50 @@
 /* ========================================== */
 #navigation .nav-links {
     display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: $c4;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+    z-index: 100;
+}
+
+#navigation .nav-item {
+    padding: 1rem 2rem;
+    font-family: $font2;
+    font-size: 1.5rem;
+}
+
+#navigation .nav-item:last-child {
+    margin-bottom: 1rem;
+}
+
+#navigation .nav-item a {
+    text-decoration: none;
+    color: $c5;
+}
+
+/* Change Language */
+#navigation .nav-item .current-lang {
+    color: $c2;
+}
+
+#navigation .current-lang span,
+#navigation .language-selection-box a i {
+    margin: 0 0.5rem;
+}
+
+#navigation .language-selection-box {
+    display: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    background: $c5;
+}
+
+#navigation .language-selection-box a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: $c4;
 }
