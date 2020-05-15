@@ -1,7 +1,11 @@
 {
     "navigation": {
-        "home": "Início",
-
+        "product": "Sobre o Produto",
+        "material": "Materiais | Ingredientes",
+        "work": "Tempo de Trabalho",
+        "others": "Custos",
+        "price": "Preço Unitário",
+        "contact": "Contato",
         "langSelection": {
             "active": {
                 "flag": "flag-icon flag-icon-br",
