@@ -1,7 +1,24 @@
 /* =============================================== */
-/* Properties */
+/* Properties & Mixins */
 /* =============================================== */
+$c1: #4FBA6F;
+$c2: #F1E912;
+$c3: #DF2935;
+$c4: #50514F;
+$c5: #F1F2EB;
 
+/* Fonts */
+@mixin font1 {
+    font-family: Pacifico, cursive;
+}
+
+@mixin font2 {
+    font-family: Oswald, sans-serif;
+}
+
+@mixin  font22 {
+    font-family: OswaldBold, sans-serif;
+}
 
 
 /* =============================================== */
@@ -21,4 +38,20 @@
 
 .show {
     display: block !important;
+}
+
+
+/* =============================================== */
+/* Shared Styles */
+/* =============================================== */
+nav, header, main, aside, footer {
+    box-sizing: border-box;
+}
+
+
+/* =============================================== */
+/* App Style */
+/* =============================================== */
+body {
+    background-color: $c4;
 }
