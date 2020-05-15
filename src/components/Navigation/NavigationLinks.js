@@ -27,8 +27,8 @@ function smoothScroll(e) {
     });
 }
 
-function toggleDropdownMenu() {
-    document.querySelector(".language-selection-box").classList.toggle("show");
+function toggleLanguageSelectionMenu() {
+    document.querySelector("#navigation .modal").classList.toggle("hide");
 }
 
 function changeLanguage(e) {
@@ -47,6 +47,10 @@ function changeLanguage(e) {
     window.location.reload(true);
 }
 
+function closeModal () {
+    
+}
+
 
 /**
  * Components
@@ -60,8 +64,12 @@ const OtherLanguages = (props) => {
     );
 
     return(
-        <div className="language-selection-box">
-            {othersLang}
+        <div className="modal hide">
+            <div className="close-modal" onClick={closeModal}>&#215;</div>
+
+            <div className="language-selection-box">
+                {othersLang}
+            </div>
         </div>
     );
 }
@@ -102,7 +110,7 @@ class NavigationLinks extends React.Component {
                     </li>
 
                     <li className="nav-item">
-                        <a href="#!" className="current-lang" onClick={toggleDropdownMenu}>
+                        <a href="#!" className="current-lang" onClick={toggleLanguageSelectionMenu}>
                             <i className={langSelection.active.flag}></i>
                             <span>{langSelection.active.text}</span>&#8744;
                         </a>
