@@ -1,11 +1,17 @@
 import React from 'react';
 
 
+/**
+ * Behavior
+ */
 function closeModal (e) {
     e.target.parentNode.classList.toggle("hide");
 }
 
 
+/**
+ * Components
+ */
 class Modal extends React.Component {
 
     render () {
