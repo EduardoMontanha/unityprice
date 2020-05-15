@@ -20,6 +20,9 @@
         }
     },
     "header": {
-        
+        "welcome": "Bienvenue à",
+        "description": "Calculez la valeur unitaire de vos produits et recettes en remplissant simplement quelques champs.",
+        "start": "Commencer",
+        "share": "Partager"
     }
 }

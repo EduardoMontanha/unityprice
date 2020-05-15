@@ -20,6 +20,9 @@
         }
     },
     "header": {
-        
+        "welcome": "Welcome to",
+        "description": "Calculate the unit value of your products and recipes just by filling in a few fields.",
+        "start": "Start",
+        "share": "Share"
     }
 }

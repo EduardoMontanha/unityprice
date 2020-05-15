@@ -20,6 +20,9 @@
         }
     },
     "header": {
-        
+        "welcome": "Benvenuto a",
+        "description": "Calcola il valore unitario dei tuoi prodotti e ricette semplicemente compilando alcuni campi.",
+        "start": "Inizio",
+        "share": "Condividere"
     }
 }
