@@ -1,3 +1,25 @@
 {
-    
+    "navigation": {
+        "product": "À Propos du Produit",
+        "material": "Matériaux | Ingrédients",
+        "work": "Temps de Travail",
+        "others": "Coûts",
+        "price": "Prix ​​Unitaire",
+        "contact": "Contact",
+        "langSelection": {
+            "active": {
+                "flag": "flag-icon flag-icon-fr",
+                "text": "Français"
+            },
+            "hidden": [
+                {"flag": "flag-icon flag-icon-us", "href": "#en", "text": "English"},
+                {"flag": "flag-icon flag-icon-es", "href": "#es", "text": "Español"},
+                {"flag": "flag-icon flag-icon-it", "href": "#it", "text": "Italiano"},
+                {"flag": "flag-icon flag-icon-br", "href": "#pt", "text": "Português"}
+            ]
+        }
+    },
+    "header": {
+        
+    }
 }
