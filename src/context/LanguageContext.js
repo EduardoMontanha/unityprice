@@ -18,6 +18,14 @@ switch (language) {
         languageData = require('../data/es.lang.json');
         break;
 
+    case "fr":
+            languageData = require('../data/fr.lang.json');
+            break;
+
+    case "it":
+        languageData = require('../data/it.lang.json');
+        break;
+
     case "pt":
         languageData = require('../data/pt.lang.json');
         break;
