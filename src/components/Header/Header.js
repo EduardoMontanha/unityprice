@@ -3,6 +3,17 @@ import { LanguageContext } from '../../context/LanguageContext';
 import shareIcon from '../../assets/images/icons/share-icon.png';
 
 
+function scrollToProductSection () {
+
+    let elementTop = document.getElementById("product").offsetTop;
+    
+    window.scroll({
+        top: elementTop,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
 class Header extends React.Component {
 
     static contextType = LanguageContext;
@@ -18,10 +29,12 @@ class Header extends React.Component {
                         <span>Unity Price</span>
                     </h1>
 
-                    <p>{headerData.description}</p>
+                    <p className="description">{headerData.description}</p>
 
                     <div>
-                        <button id="start-btn">{headerData.start}</button>
+                        <button id="start-btn" onClick={scrollToProductSection}>
+                            {headerData.start}
+                        </button>
 
                         <button id="share-btn">
                             <span>{headerData.share}</span>
