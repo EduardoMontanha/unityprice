@@ -24,6 +24,12 @@ $font2Bold: OswaldBold, sans-serif;
     box-sizing: border-box;
 }
 
+.description {
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .hide {
     display: none !important;
 }
@@ -36,7 +42,7 @@ $font2Bold: OswaldBold, sans-serif;
 /* =============================================== */
 /* Shared Styles */
 /* =============================================== */
-nav, header, main, aside, footer {
+header, nav, main, section, aside, footer {
     box-sizing: border-box;
 }
 
@@ -44,10 +50,23 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font1;
 } 
 
+h1, h2 {
+    margin-bottom: 3rem;
+}
+
 
 /* =============================================== */
 /* App Style */
 /* =============================================== */
 body {
     background-color: $c5;
+    font-family: $font2;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+    font-size: 2rem;
 }
