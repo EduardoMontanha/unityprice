@@ -24,5 +24,13 @@
         "description": "Calcule o valor unitário de seus produtos e receitas apenas preenchendo alguns campos.",
         "start": "Começar",
         "share": "Compartilhar"
+    },
+    "product": {
+        "title": "Sobre o Produto",
+        "description": "Para começar, informe abaixo o nome de seu produto/receita e quanto rende esta produção.",
+        "nameLabel": "Nome do produto/receita",
+        "namePlaceholder": "Bolo de Chocolate",
+        "yieldLabel": "Rendimento de Produção",
+        "yieldDescription": "Colocar quanto rende a produção. Por exemplo, 3 bolos (apenas números)"
     }
 }
