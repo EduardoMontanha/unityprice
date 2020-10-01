@@ -1,0 +1,44 @@
+/* ===================== */
+/* Burger Button */
+/* ===================== */
+header .nav-bar-toggler {
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header .nav-bar-toggler:focus {
+    outline: none;
+}
+
+header #burger-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+header #burger-icon .bar {
+    width: 35px;
+    height: 4px;
+    background-color: $c5;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+header.active #burger-icon {
+    padding-left: 4px;
+}
+
+/* Rotate first bar */
+header.active #burger-icon .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+/* Fade out the second bar */
+header.active #burger-icon .bar2 {
+    opacity: 0;
+}
+/* Rotate last bar */
+header.active #burger-icon .bar3 {
+    transform: rotate(45deg) translate(-8px, -6px) ;
+}

@@ -1,0 +1,52 @@
+/* ============================ */
+/* Color Pallet */
+/* ============================ */
+/* Main */
+$c1: #46494C;
+$c2: #DB2B39;
+$c3: #4FBA6F;
+$c4: #F1E912;
+$c5: #EAEBED;
+
+/* Lighter */
+$l1: #62666A;
+$l2: #E1515D;
+$l3: #6CC687;
+$l4: #F4EE3E;
+$l5: #FFFFFF;
+
+/* Shades */
+$s1: #3B3D40;
+$s2: #C0212E;
+$s3: #3FA25C;
+$s4: #D4CD0C;
+$s5: #D3D5D9;
+
+
+/* ##################### */
+/* Fonts */
+/* ##################### */
+$font1: Pacifico, serif;
+$font2: Oswald, sans-serif;
+$font2b: OswaldBold, sans-serif;
+
+
+/* ##################### */
+/* Common Elements */
+/* ##################### */
+body {
+    max-width: 100vw;
+    background-color: $c1;
+}
+
+
+/* ============================ */
+/* Common Classes */
+/* ============================ */
+.container {
+
+}
+
+.hide {
+    display: none !important;
+}

@@ -24,5 +24,13 @@
         "description": "Calculate the unit value of your products and recipes in a few minutes.",
         "start": "Start",
         "share": "Share"
+    },
+    "product": {
+        "title": "Sobre o Produto",
+        "description": "Nos conte um pouco do seu produto.",
+        "nameLabel": "Nome do produto / receita",
+        "namePlaceholder": "Bolo / Camisetas",
+        "yieldLabel": "Rendimento de Produção",
+        "yieldDescription": "Colocar quanto rende a produção. Por exemplo, 3 bolos (apenas números)"
     }
 }
