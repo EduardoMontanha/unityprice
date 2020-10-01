@@ -9,7 +9,7 @@ function Header() {
     const [hideMenu, setHideMenu] = useState(true);
 
     useEffect(() => {
-        if (size.width >= 1024) {
+        if (size.width >= 768) {
             setIsMobile(false);
             setHideMenu(false);
         } else {
@@ -26,30 +26,33 @@ function Header() {
 
     return (
         <header className={hideMenu ? '' : 'active'}>
-            <div className="logo">
-                <Link to="/">
-                    <img src={logo} alt="Logo" />
-                </Link>
-            </div>
-
-            <button className={`nav-bar-toggler ${isMobile ? '' : 'hide'}`} onClick={toggleMenu}>
-                <div id="burger-icon">
-                    <div className="bar bar1"></div>
-                    <div className="bar bar2"></div>
-                    <div className="bar bar3"></div>
+            <div className="container">
+                <div className="logo">
+                    <Link to="/">
+                        <img src={logo} alt="Logo" />
+                        <h1>Unity Price</h1>
+                    </Link>
                 </div>
-            </button>
 
-            <nav className={`nav-links ${hideMenu ? 'hide' : ''}`}>
-                <ul>
-                    <li className="nav-item">
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/sobre">Sobre</Link>
-                    </li>
-                </ul>
-            </nav>
+                <button className={`nav-bar-toggler ${isMobile ? '' : 'hide'}`} onClick={toggleMenu}>
+                    <div id="burger-icon">
+                        <div className="bar bar1"></div>
+                        <div className="bar bar2"></div>
+                        <div className="bar bar3"></div>
+                    </div>
+                </button>
+
+                <nav className={`nav-links ${hideMenu ? 'hide' : ''}`}>
+                    <ul>
+                        <li className="nav-item">
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/sobre">Sobre</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 }
