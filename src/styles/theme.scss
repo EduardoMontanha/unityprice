@@ -37,6 +37,17 @@ $font2b: OswaldBold, sans-serif;
 body {
     max-width: 100vw;
     background-color: $c1;
+    font-family: $font2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font1;
+    color: $c4;
+}
+
+a {
+    text-decoration: none;
+    color: $c5;
 }
 
 
@@ -44,7 +55,9 @@ body {
 /* Common Classes */
 /* ============================ */
 .container {
-
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hide {
