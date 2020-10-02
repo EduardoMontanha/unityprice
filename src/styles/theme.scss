@@ -50,6 +50,11 @@ a {
     color: $c5;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
 
 /* ============================ */
 /* Common Classes */
@@ -62,4 +67,35 @@ a {
 
 .hide {
     display: none !important;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    font-size: 3rem;
+    line-height: 2rem;
+    background-color: transparent;
+    color: $c5;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 2rem;
+    border-radius: 10px;
+    background: $c5;
 }
