@@ -1,36 +1,8 @@
 {
-    "navigation": {
-        "product": "About the Product",
-        "material": "Materials | Ingredients",
-        "work": "Working Time",
-        "others": "Costs",
-        "price": "Unity Price",
-        "contact": "Contact",
-        "langSelection": {
-            "active": {
-                "flag": "flag-icon flag-icon-us",
-                "text": "English"
-            },
-            "hidden": [
-                {"flag": "flag-icon flag-icon-es", "href": "#es", "text": "Español"},
-                {"flag": "flag-icon flag-icon-fr", "href": "#fr", "text": "Français"},
-                {"flag": "flag-icon flag-icon-it", "href": "#it", "text": "Italiano"},
-                {"flag": "flag-icon flag-icon-br", "href": "#pt", "text": "Português"}
-            ]
-        }
-    },
     "header": {
-        "welcome": "Welcome to",
-        "description": "Calculate the unit value of your products and recipes in a few minutes.",
-        "start": "Start",
-        "share": "Share"
-    },
-    "product": {
-        "title": "Sobre o Produto",
-        "description": "Nos conte um pouco do seu produto.",
-        "nameLabel": "Nome do produto / receita",
-        "namePlaceholder": "Bolo / Camisetas",
-        "yieldLabel": "Rendimento de Produção",
-        "yieldDescription": "Colocar quanto rende a produção. Por exemplo, 3 bolos (apenas números)"
+        "navigation": {
+            "home": "Home",
+            "about": "About"
+        }
     }
 }
