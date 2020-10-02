@@ -1,20 +1,43 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import en from '../assets/languages/en.lang.json';
+import es from '../assets/languages/es.lang.json';
+import fr from '../assets/languages/fr.lang.json';
+import it from '../assets/languages/it.lang.json';
+import pt from '../assets/languages/pt.lang.json';
 
-const LanguageContext = React.createContext('');
+export const languageOptions = {
+    en: 'English',
+    es: 'Español',
+    fr: 'Français',
+    it: 'Italiano',
+    pt: 'Português'
+};
 
-function LanguageProvider(props) {
-    const language = useContext(LanguageContext);
-    const [lang, setLang] = useState();
+export const langsData = {
+    en, es, fr, it, pt
+};
 
-    useEffect(() => {
+export const LanguageContext = React.createContext({
+    lang: 'pt',
+    langData: { pt }
+});
 
-    }, []);
+export const LanguageProvider = ({ children }) => {
+    const [lang, setLang] = useState('pt');
+
+    const context = {
+        lang: lang,
+        langData: langsData[lang],
+        setLanguage: selected => {
+            const newLang = languageOptions[selected] ? selected : 'pt';
+            setLang(newLang);
+            window.localStorage.setItem('up-lang', newLang);
+        }
+    };
 
     return(
-        <language.Provider value={lang} setLanguage={setLang}>
-            {props.children}
-        </language.Provider>
+        <LanguageContext.Provider value={context}>
+            {children}
+        </LanguageContext.Provider>
     );
 }
-
-export default LanguageProvider;
