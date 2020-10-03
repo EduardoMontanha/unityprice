@@ -1,9 +1,12 @@
 import React from 'react';
 import { useContext } from 'react';
 import { ProductContext } from '../../contexts/ProductContext';
+import Text from '../components/Text';
 
 function ProductDetails() {
     const product = useContext(ProductContext);
+    const pageId = "product-details";
+    const pageIdGlobal = "global";
 
     const scrollTo = element => {
         document.querySelector(element).scrollIntoView({ 
@@ -15,24 +18,33 @@ function ProductDetails() {
         <>
             <section id="product-name">
                 <div className="container">
-                    <h2>O que é o seu produto?</h2>
-
-                    <p>
-                        Conte para nós o que é o seu produto.<br />
-                        Um exemplo: Bolo de Cenoura.
+                    <h2><Text pageId={pageId} tid="title" /></h2>
+                    
+                    <p className="description">
+                        <Text pageId={pageId} tid="description" /><br />
+                        <Text pageId={pageId} tid="sample" />
                     </p>
 
-                    <input type="text" />
+                    <input id="name" type="text" placeholder="Pizza" />
 
                     <div className="scroll-ctas">
-                        <button onClick={() => scrollTo("#resources")}>Próximo</button>
+                        <button className="next" onClick={() => scrollTo("#resources")}>
+                            <Text pageId={pageIdGlobal} tid="cta-next" />
+                        </button>
                     </div>
                 </div>
             </section>
 
             <section id="resources">
                 <div className="container">
-                    
+                    <div className="scroll-ctas hide">
+                        <button className="prev" onClick={() => scrollTo("#product-name")}>
+                            <Text pageId={pageIdGlobal} tid="cta-prev" />
+                        </button>
+                        <button className="next" onClick={() => scrollTo("")}>
+                            <Text pageId={pageIdGlobal} tid="cta-next" />
+                        </button>
+                    </div>
                 </div>
             </section>
         </>
