@@ -4,5 +4,11 @@
             "home": "Début",
             "about": "Sur"
         }
+    },
+    
+    "hero": {
+        "h2": "Bienvenue à",
+        "description": "Calculez la valeur unitaire de vos produits et sachez combien facturer pour utiliser au mieux votre temps et vos ressources.",
+        "cta": "Commencer"
     }
 }

@@ -4,5 +4,11 @@
             "home": "Início",
             "about": "Sobre"
         }
+    },
+    
+    "hero": {
+        "h2": "Bem-vindo ao",
+        "description": "Calcule o valor unitário de seus produtos e saiba quanto cobrar para ter um melhor aproveitamento de seu tempo e recursos.",
+        "cta": "Começar"
     }
 }

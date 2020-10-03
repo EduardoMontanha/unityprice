@@ -4,5 +4,11 @@
             "home": "Inizio",
             "about": "Di"
         }
+    },
+    
+    "hero": {
+        "h2": "Benvenuto a",
+        "description": "Calcola il valore unitario dei tuoi prodotti e scopri quanto addebitare per utilizzare al meglio tempo e risorse.",
+        "cta": "Inizio"
     }
 }

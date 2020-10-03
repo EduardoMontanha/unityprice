@@ -4,5 +4,11 @@
             "home": "Home",
             "about": "About"
         }
+    },
+    
+    "hero": {
+        "h2": "Welcome to",
+        "description": "Calculate the unit value of your products and know how much to charge to make the best use of your time and resources.",
+        "cta": "Begin"
     }
 }
