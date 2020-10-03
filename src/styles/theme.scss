@@ -50,6 +50,14 @@ a {
     color: $c5;
 }
 
+input {
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+}
+
 button {
     border: none;
     cursor: pointer;
@@ -73,6 +81,37 @@ button:focus {
 
 .hide {
     display: none !important;
+}
+
+/* Scrolling CTAs */
+.scroll-ctas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .next, .prev {
+        width: 49%;
+        padding: 0.8rem 0;
+        border-radius: 5px;
+        color: $c5;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .next {
+        background-color: $s3;
+    }
+    .next:hover {
+        background-color: $c3;
+    }
+
+    .prev {
+        margin-right: 2%;
+        background-color: $s2;
+    }
+    .prev:hover {
+        background-color: $c2;
+    }
 }
 
 /* Modal */
