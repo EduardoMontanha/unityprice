@@ -1,4 +1,9 @@
 {
+    "global": {
+        "cta-next": "Next",
+        "cta-prev": "Previous"
+    },
+
     "header": {
         "navigation": {
             "home": "Home",
@@ -10,5 +15,11 @@
         "h2": "Welcome to",
         "description": "Calculate the unit value of your products and know how much to charge to make the best use of your time and resources.",
         "cta": "Begin"
+    },
+    
+    "product-details": {
+        "title": "What is your product?",
+        "description": "Tell us what your product is.",
+        "sample": "For example, Carrot Cake or T-shirt."
     }
 }

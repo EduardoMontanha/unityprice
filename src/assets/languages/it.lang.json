@@ -1,4 +1,9 @@
 {
+    "global": {
+        "cta-next": "Prossimo",
+        "cta-prev": "Precedente"
+    },
+
     "header": {
         "navigation": {
             "home": "Inizio",
@@ -10,5 +15,11 @@
         "h2": "Benvenuto a",
         "description": "Calcola il valore unitario dei tuoi prodotti e scopri quanto addebitare per utilizzare al meglio tempo e risorse.",
         "cta": "Inizio"
+    },
+    
+    "product-details": {
+        "title": "Qual è il tuo prodotto?",
+        "description": "Dicci qual è il tuo prodotto.",
+        "sample": "Ad esempio, Torta di Carote o Camicia."
     }
 }

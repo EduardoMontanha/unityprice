@@ -1,4 +1,9 @@
 {
+    "global": {
+        "cta-next": "Suivant",
+        "cta-prev": "Précédent"
+    },
+
     "header": {
         "navigation": {
             "home": "Début",
@@ -10,5 +15,11 @@
         "h2": "Bienvenue à",
         "description": "Calculez la valeur unitaire de vos produits et sachez combien facturer pour utiliser au mieux votre temps et vos ressources.",
         "cta": "Commencer"
+    },
+    
+    "product-details": {
+        "title": "Quel est votre produit?",
+        "description": "Dites-nous quel est votre produit.",
+        "sample": "Par exemple, Gâteau aux Carottes ou Chemise."
     }
 }

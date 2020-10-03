@@ -1,4 +1,9 @@
 {
+    "global": {
+        "cta-next": "Siguiente",
+        "cta-prev": "Anterior"
+    },
+
     "header": {
         "navigation": {
             "home": "Inicio",
@@ -10,5 +15,11 @@
         "h2": "Bienvenido al",
         "description": "Calcule el valor unitario de sus productos y sepa cuánto cobrar para aprovechar al máximo su tiempo y recursos.",
         "cta": "Empezar"
+    },
+    
+    "product-details": {
+        "title": "¿Cuál es tu producto?",
+        "description": "Cuéntanos cuál es tu producto.",
+        "sample": "Por ejemplo, Pastel de Zanahoria o Camiseta."
     }
 }
