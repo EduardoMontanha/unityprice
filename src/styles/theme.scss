@@ -42,7 +42,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font1;
-    color: $c4;
 }
 
 a {
@@ -55,6 +54,10 @@ button {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+}
+
 
 /* ============================ */
 /* Common Classes */
@@ -62,7 +65,9 @@ button {
 .container {
     width: 100%;
     max-width: 1600px;
+    padding: 0 1rem;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .hide {
