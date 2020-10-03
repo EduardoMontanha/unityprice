@@ -33,7 +33,7 @@ function Header() {
                 <div className="logo">
                     <Link to="/">
                         <img src={logo} alt="Logo" />
-                        <h1>Unity Price</h1>
+                        <span>Unity Price</span>
                     </Link>
                 </div>
 
