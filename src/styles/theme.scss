@@ -54,16 +54,13 @@ input {
     box-sizing: border-box;
 }
 
-input:focus {
-    outline: none;
-}
-
 button {
     border: none;
     cursor: pointer;
 }
 
-button:focus {
+button:focus,
+input:focus {
     outline: none;
 }
 
