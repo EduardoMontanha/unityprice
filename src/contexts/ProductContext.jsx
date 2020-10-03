@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export const ProductContext = React.createContext();
 
 export const ProductProvider = ({ children }) => {
-    const [productData, setProductData] = useState({
+    const [product, setProduct] = useState({
         name: "",
         yield: 0,
         work: {
@@ -27,8 +27,8 @@ export const ProductProvider = ({ children }) => {
     });
 
     const context = {
-        product: productData,
-        setProduct: setProductData
+        product,
+        setProduct
     };
 
     return(
