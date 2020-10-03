@@ -1,0 +1,94 @@
+#hero {
+    width: 100vw;
+    height: 100vh;
+    padding: calc(90px + 3rem) 0 6rem;
+    position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/images/bg.png);
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#hero .title {
+    text-align: center;
+
+    h1, h2 {
+        text-shadow: 2px 2px 3px #000;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: $c4;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: $c5;
+    }
+}
+
+#hero .description {
+    text-align: center;
+    text-shadow: 2px 2px 3px #000;
+    font-size: 2rem;
+    color: $c5;
+}
+
+#hero .cta-start {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: $c3;
+    border-radius: 5px;
+    font-family: $font2b;
+    font-size: 1.5rem;
+    color: $c5;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.8);
+    transition: all 300ms ease;
+}
+
+#hero .cta-start:hover {
+    background-color: $l3;
+}
+
+
+/* ========================================== */
+/* Large Screens */
+/* ========================================== */
+@media (min-width: 1024px) {
+    #hero .title {
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    #hero .description {
+        max-width: 50%;
+    }
+
+    #hero .cta-start {
+        max-width: 400px;
+    }
+}
